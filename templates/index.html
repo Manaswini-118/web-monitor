@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cloud Website Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg, 
+                #ff9a9e, #fad0c4, #fbc2eb, 
+                #a18cd1, #84fab0, #8fd3f4);
+            background-size: 1200% 1200%;
+            animation: gradientMove 12s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card {
+            width: 420px;
+            padding: 30px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(20px);
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            background: linear-gradient(45deg, #ff6ec4, #7873f5);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .alert {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .changes {
+            margin-top: 15px;
+            font-size: 13px;
+            background: rgba(255,255,255,0.4);
+            padding: 10px;
+            border-radius: 10px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>🌈 Cloud Website Monitor</h2>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter website URL..." required>
+        <button type="submit">Check Website</button>
+    </form>
+
+    {% if result %}
+        <div class="result">{{ result }}</div>
+    {% endif %}
+
+    {% if alert %}
+        <div class="alert">{{ alert }}</div>
+    {% endif %}
+
+    {% if changes %}
+        <div class="changes">{{ changes }}</div>
+    {% endif %}
+</div>
+
+</body>
+</html>

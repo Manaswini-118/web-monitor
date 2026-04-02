@@ -1,0 +1,426 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python Release Python install manager 26.1 | Python.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notice: This page displays a fallback because interactive scripts did not run. Possible causes include disabled JavaScript or failure to load scripts or stylesheets.
+
+
+
+
+
+Skip to content
+
+
+▼ Close
+                
+
+
+Python
+
+
+PSF
+
+
+Docs
+
+
+PyPI
+
+
+Jobs
+
+
+Community
+
+
+
+▲ The Python Network
+                
+
+
+
+
+
+
+
+
+
+Donate
+
+≡ Menu
+
+
+Search This Site
+
+
+                                    GO
+                                
+
+
+
+
+A A
+
+Smaller
+Larger
+Reset
+
+
+
+
+
+
+Socialize
+
+LinkedIn
+Mastodon
+Chat on IRC
+Twitter
+
+
+
+
+
+
+
+
+
+
+About
+
+Applications
+Quotes
+Getting Started
+Help
+Python Brochure
+
+
+
+Downloads
+
+All releases
+Source code
+Windows
+macOS
+Android
+Other Platforms
+License
+Alternative Implementations
+
+
+
+Documentation
+
+Docs
+Audio/Visual Talks
+Beginner's Guide
+FAQ
+Non-English Docs
+PEP Index
+Python Books
+Python Essays
+
+
+
+Community
+
+Diversity
+Mailing Lists
+IRC
+Forums
+PSF Annual Impact Report
+Python Conferences
+Special Interest Groups
+Python Logo
+Python Wiki
+Code of Conduct
+Community Awards
+Get Involved
+Shared Stories
+
+
+
+Success Stories
+
+Arts
+Business
+Education
+Engineering
+Government
+Scientific
+Software Development
+
+
+
+News
+
+Python News
+PSF Newsletter
+PSF News
+PyCon US News
+News from the Community
+
+
+
+Events
+
+Python Events
+User Group Events
+Python Events Archive
+User Group Events Archive
+Submit an Event
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Python install manager 26.1
+
+Release date: March 31, 2026
+The Python install manager for Windows is our tool for installing and managing runtimes. The traditional executable installer will stop being released with Python 3.16
+As well as the files below, the Python install manager can be installed using the Microsoft Store app. For most users, this is the recommended approach.
+To install using WinGet, the command is winget install 9NQ7512CXL7T.
+Full documentation for the Python install manager is available in our documentation. In particular, there are troubleshooting guides, as well as instructions around administrative installs, including intended use of the legacy MSI installer. Use of the Store app or the MSIX package is recommended.
+The install manager can install versions of Python as far back as 3.5, but only supports Windows 10 operating systems (or Windows Server 2022) and later. Use py list --online to see all available packages, including the embeddable distro, experimental free-threaded builds, and packages including the standard library test suite and debug symbols.
+We recommend uninstalling the Python launcher from previous installs when installing the Python install manager, as both use the py command. After installing the install manager, the first launch should run a configuration checker, which can also be manually launched with py install --configure or pymanager install --configure. Removing the install manager will not remove any installs, but the py uninstall --purge command will perform a full cleanup.
+The Python install manager will automatically update within a day of an update being released. Once installed, you should not need to download the install manager again.
+Please provide all feedback as issues on our GitHub repository at github.com/python/pymanager.
+Full Changelog
+
+Files
+
+
+
+Windows
+
+Download Installer (MSIX)
+
+
+
+
+
+
+Version
+Operating system
+Description
+File size
+MD5 checksum
+
+
+
+
+Installer (MSIX)
+Windows
+Bundles Python 3.14.3
+44.1 MB
+6C778EC0E29ECCC5CBF47CD1A3D43346
+
+
+MSI package
+Windows
+See documentation before use
+9.5 MB
+FE937DB651C99A20F7048C20018A2692
+
+
+
+
+
+
+
+
+
+
+
+▲ Back to Top
+
+
+About
+
+Applications
+Quotes
+Getting Started
+Help
+Python Brochure
+
+
+
+Downloads
+
+All releases
+Source code
+Windows
+macOS
+Android
+Other Platforms
+License
+Alternative Implementations
+
+
+
+Documentation
+
+Docs
+Audio/Visual Talks
+Beginner's Guide
+FAQ
+Non-English Docs
+PEP Index
+Python Books
+Python Essays
+
+
+
+Community
+
+Diversity
+Mailing Lists
+IRC
+Forums
+PSF Annual Impact Report
+Python Conferences
+Special Interest Groups
+Python Logo
+Python Wiki
+Code of Conduct
+Community Awards
+Get Involved
+Shared Stories
+
+
+
+Success Stories
+
+Arts
+Business
+Education
+Engineering
+Government
+Scientific
+Software Development
+
+
+
+News
+
+Python News
+PSF Newsletter
+PSF News
+PyCon US News
+News from the Community
+
+
+
+Events
+
+Python Events
+User Group Events
+Python Events Archive
+User Group Events Archive
+Submit an Event
+
+
+
+Contributing
+
+Developer's Guide
+Issue Tracker
+python-dev list
+Core Mentorship
+Report a Security Issue
+
+
+
+▲ Back to Top
+
+ 
+
+
+
+Help & General Contact
+Diversity Initiatives
+Submit Website Bug
+
+Status 
+
+
+
+
+Copyright ©2001-2026.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Notice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
